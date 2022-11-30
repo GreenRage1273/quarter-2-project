@@ -1,0 +1,71 @@
+public class javaCalculatorOperationMethods {
+	public static long exponentMethod(String input) {
+		int exponentIndex = input.indexOf("^");
+		
+		String firstNumber = input.substring(0, exponentIndex);
+		String secondNumber = input.substring(exponentIndex + 1, input.length());
+	
+		long output = (long)Math.pow(Long.parseLong(firstNumber), Long.parseLong(secondNumber));
+	
+		return output;
+	}
+	public static long squareRootMethod(String input) {
+		int squareRootIndex = input.indexOf("sqrt");
+		
+		String number = input.substring(squareRootIndex + 4, input.length());
+	
+		long output = (long)(Math.sqrt(Long.parseLong(number)));
+	
+		return output;
+	}
+	public static long modulusMethod(String input) {
+		int modIndex = input.indexOf("%");
+		
+		String number1 = input.substring(0, modIndex);
+		String number2 = input.substring(modIndex + 1, input.length());
+	
+		long output = Long.parseLong(number1) % Long.parseLong(number2);
+	
+		return output;
+	}
+	public static long multiplicationMethod(String input) {
+		int multiplicationIndex = input.indexOf("*");
+		
+		String firstNumber = input.substring(0, multiplicationIndex);
+		String secondNumber = input.substring(multiplicationIndex + 1, input.length());
+	
+		long output = Long.parseLong(firstNumber) * Long.parseLong(secondNumber);
+	
+		return output;
+	}
+	public static long divisionMethod(String input) {
+		int divisionIndex = input.indexOf("/");
+		
+		String firstNumber = input.substring(0, divisionIndex);
+		String secondNumber = input.substring(divisionIndex + 1, input.length());
+	
+		long output = Long.parseLong(firstNumber) / Long.parseLong(secondNumber);
+	
+		return output;
+	}
+	public static long additionMethod(String input) {
+		int plusIndex = input.indexOf("+");
+		
+		String firstNumber = input.substring(0, plusIndex);
+		String secondNumber = input.substring(plusIndex + 1, input.length());
+	
+		long output = Long.parseLong(firstNumber) + Long.parseLong(secondNumber);
+	
+		return output;
+	}
+	public static long subtractionMethod(String input) {
+		int subtractionIndex = input.indexOf("-");
+		
+		String firstNumber = input.substring(0, subtractionIndex);
+		String secondNumber = input.substring(subtractionIndex + 1, input.length());
+	
+		long output = Long.parseLong(firstNumber) - Long.parseLong(secondNumber);
+	
+		return output;
+	}
+}
