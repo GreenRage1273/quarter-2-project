@@ -1,0 +1,55 @@
+public static String trimBUTBETTER(String input) {
+		//while there are blank spaces
+		while (input.contains(" ")) {
+			//find the index of the blank space
+			int whitespaceIndex = input.indexOf(' ');
+			
+			//find the length of the string
+			int inputLength = input.length();
+			
+			//split the string into two substrings from the beginning to before the blank space and after the blank space to the end
+			String sub1 = input.substring(0, whitespaceIndex);
+			String sub2 = input.substring(whitespaceIndex + 1, inputLength);
+			
+			//combine the substrings into one string essentially excluding the blank space
+			input = sub1 + sub2;
+		}
+		//return the trimmed string
+		return input;
+	}	
+	public static String replaceAns(String input, long ans){
+		String replacedString = input;
+		if(input.contains("ans")) {
+			String sub1 = "", sub2 = "";
+			int ansIndex = input.indexOf("ans");
+			int inputLength = input.length();
+			
+			if(ansIndex == 0) {
+				sub1 = input.substring(0, 3);
+				sub2 = input.substring(3, inputLength);
+			}else {
+				sub1 = input.substring(ansIndex, ansIndex + 3);
+				sub2 = input.substring(0, ansIndex - 1);
+			}
+			sub1 = ans + "";
+			replacedString = sub1.concat(sub2);
+		}
+		return replacedString;
+	}	
+	public static void displayCommands(){
+		System.out.println();
+		System.out.println("Commands:");
+		System.out.println("------------------------------");
+		System.out.println("\"sqrt\": Square Root");
+		System.out.println("\"^\": Exponent");
+		System.out.println("\"%\": Modulus");
+		System.out.println("\"*\": Multiplication");
+		System.out.println("\"/\": Division");
+		System.out.println("\"+\": Addition");
+		System.out.println("\"-\": Subtraction");
+		System.out.println("\"ans\": Previous Answer");
+		System.out.println("\"exit\": Exits the program");
+		System.out.println("\"cmds\": Displays Commands");
+		System.out.println("Other Strings: Typing in someone's name may bring up" + "\n" + "a special easteregg message (ie: \"Mr.Ski\")");
+		System.out.println("------------------------------");		
+	}
