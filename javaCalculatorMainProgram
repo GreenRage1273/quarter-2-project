@@ -1,0 +1,31 @@
+public static void main(String args[]) {
+		//initiate scanner
+		@SuppressWarnings ("resource")
+		java.util.Scanner input = new java.util.Scanner(System.in);
+		
+		//initiate variables
+		long currentAnswer = 0;
+		String userInput = "";
+		
+		//print welcome message
+		System.out.println("Welcome to the Java Calculator.");
+		javaCalculatorServiceMethods.displayCommands();
+
+		System.out.print("Calculator Input: ");
+		for(userInput = input.nextLine(); !(userInput.contains("exit")); userInput = input.nextLine()){
+			String calcInput = javaCalculatorServiceMethods.trimBUTBETTER(userInput);
+			
+			javaCalculatorEasterEggMethods.checkForEasterEggs(calcInput);
+			
+			calcInput = javaCalculatorServiceMethods.replaceAns(calcInput, currentAnswer);
+			 
+			currentAnswer = javaCalculatorSideProgram.performOperations(calcInput);
+			
+			System.out.println("Answer: " + currentAnswer);
+			System.out.println("------------------------------" + "\n" + "------------------------------");
+			
+			System.out.print("Calculator Input: ");
+		}
+		System.out.println();
+		System.out.println("Thank you for using the program!");
+	}
