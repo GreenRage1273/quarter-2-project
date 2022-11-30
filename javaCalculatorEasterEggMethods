@@ -1,0 +1,58 @@
+public class javaCalculatorEasterEggMethods {
+	public static void checkForEasterEggs(String calcInput) {
+		if(calcInput.equalsIgnoreCase("Blake")) {
+			System.out.println("------------------------------");
+			System.out.println("Honorary member of the team and pro emotional supporter");
+			System.out.print("------------------------------");
+		}else if(calcInput.equalsIgnoreCase("Hannah")) {
+			System.out.print("------------------------------");
+			System.out.println("\n" + "BANANINHA <33333");
+			System.out.print("------------------------------");
+		}else if(calcInput.equalsIgnoreCase("River")) {
+			System.out.print("------------------------------");
+			System.out.println("\n" + "ART NERD <333");
+			System.out.print("------------------------------");
+		}else if(calcInput.equalsIgnoreCase("Kit")) {
+			System.out.print("------------------------------");
+			System.out.println("\n" + "Eww, Python Programmer -_- <3");
+			System.out.print("------------------------------");
+		}else if(calcInput.equalsIgnoreCase("Aryan")) {
+			System.out.print("------------------------------");
+			System.out.println("\n" + "Indian Man");
+			System.out.print("------------------------------");
+		}else if(calcInput.equalsIgnoreCase("Gustavo")) {
+			System.out.print("------------------------------");
+			System.out.println("\n" + "O uniquo outro Brasileiro na escola," + "\n" + "cara e raipado");
+			System.out.print("------------------------------");
+		}else if(calcInput.equalsIgnoreCase("Armando")) {
+			System.out.print("------------------------------");
+			System.out.println("\n" + "MATH NERD!");
+			System.out.print("------------------------------");
+		}else if(calcInput.equalsIgnoreCase("Ivan")) {
+			System.out.print("------------------------------");
+			System.out.println("\n" + "Bro got me feeling like: *Android notification sound*");
+			System.out.print("------------------------------");
+		}else if(calcInput.equalsIgnoreCase("Jose")) {
+			System.out.print("------------------------------");
+			System.out.println("\n" + "Bros chill ong");
+			System.out.print("------------------------------");
+		}else if(calcInput.equalsIgnoreCase("Analise")) {
+			System.out.print("------------------------------");
+			System.out.println("\n" + "RAT! <3");
+			System.out.print("------------------------------");
+		}else if(calcInput.equalsIgnoreCase("Ski")) {
+			System.out.print("------------------------------");
+			System.out.println("\n" + "LOVE YOU BESTIE <333");
+			System.out.print("------------------------------");
+		}else if(calcInput.equalsIgnoreCase("Ethan")) {
+			System.out.print("------------------------------");
+			System.out.println("\n" + "WACKY WEDNESDAY");
+			System.out.print("------------------------------");
+		}else if((calcInput.equalsIgnoreCase("Mr.Ski")) || calcInput.equalsIgnoreCase("Mr.Swiderski")) {
+			System.out.print("------------------------------");
+			System.out.println("\n" + "Best teacher at Crooms, hands down :)" + "\n" + "(give us a good grade)");
+			System.out.print("------------------------------");
+		}
+		
+	}
+}
